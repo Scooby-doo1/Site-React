@@ -3,7 +3,6 @@
 /* Essa linha importa uma fonte externa do Google Fonts*/
 body {
     margin: 0;
-    background-color: rgb(18, 18, 18);
 }
 
 .container-header {
@@ -28,9 +27,9 @@ body {
 }
 
 .menu a {
-    padding: 15px;
+    padding: 10px;
     background-color: #b1181dfd;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -111,16 +110,79 @@ body {
     /* Define a espessura da fonte.  */
     font-style: normal;
     /* Mantém o estilo da fonte como normal, sem itálico.  */
-    
+
 }
+
 .navegacao a {
     text-decoration: none;
-    color: white; 
+    color: white;
     text-transform: uppercase;
     /* Faz a letra ficarem MAIUSCULA */
-    border-right: 1px solid #ccc; /* Vai fazer uma Borda na vertical. Teoricamente uma linha. */
-    padding-right: 10px; /*Vai dar o espaçamento da linha para a linha não ficar colado com o nome */
+    border-right: 1px solid #3b3a3a;
+    /* Vai fazer uma Borda na vertical. Teoricamente uma linha. */
+    padding-right: 10px;
+    /*Vai dar o espaçamento da linha para a linha não ficar colado com o nome */
 }
-.navegacao a:hover{
+
+.navegacao a:hover {
     color: red;
 }
+
+/*-----------------------------------------------------------------------*/
+.secao {
+    display: flex;
+    background-color: #333;
+}
+
+.secao-1, .secao-2 {
+    width: 850px; /* Define a largura fixa */
+    height: 480px; /* Define a altura fixa */
+    overflow: hidden; /* Esconde o que ultrapassa os limites do bloco */
+    position: relative; /* Necessário para o texto sobreposto funcionar */
+    margin: 2px;
+}
+
+.secao-1 img, .secao-2 img {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    /* Ajusta a imagem para preencher o espaço */
+    object-position: center;
+    /* Centraliza o foco da imagem */
+    object-position: center bottom;
+    transform: scale(1.2); /* Aumentado o zoom */
+}
+
+.secao-1:hover img, .secao-2:hover img {
+    transform: scale(1.3); /* Aplica o zoom ao passar o mouse */
+    transition: transform .4s ease-in;
+
+}
+
+/* Container de texto sobreposto */
+.noticia-fut {
+    position: absolute;
+    bottom: 20px;
+    left: 90px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+    padding: 5px; /* Reduzi o padding */
+    border-radius: 5px;
+    max-width: 90%;
+    z-index: 2; /* Garante que o texto fique acima da imagem */
+}
+
+/* Títulos com fundo colorido */
+.noticia-fut p.futebol, .noticia-fut p.remo {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: red; /* Mantém o fundo vermelho */
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    z-index: 3; /* Garante que o fundo do texto fique acima da imagem */
+}
+    
