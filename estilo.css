@@ -47,7 +47,7 @@ body {
 .menu a:hover {
     text-decoration: dashed;
     background-color: rgb(85, 6, 9);
-    text-decoration: none;
+    text-decoration: underline;
     /* Vai aparecer o traço embaixo */
 
 }
@@ -59,7 +59,7 @@ body {
     /* Centraliza os ícones verticalmente */
     gap: 10px;
     /* Espaçamento entre os ícones */
-    margin-left: 100px;
+    margin-left: 300px;
 }
 
 .icon img {
@@ -79,6 +79,7 @@ body {
     invert(1): Essa função inverte todas as cores do elemento. Combinada com o brightness(0), ela transforma o preto em branco. */
 }
 
+/*----------------------------------------------------------------------------------------------------------------*/
 .container-navegacao {
     background-color: black;
     width: 100%;
@@ -180,9 +181,11 @@ body {
     z-index: 2;
     /* Garante que o texto fique acima da imagem */
 }
-.noticia-fut:hover, h2 .remo:hover{
+
+.noticia-fut:hover, h2 .remo:hover {
     background-color: rgba(0, 0, 0, 0.900);
 }
+
 /* Títulos com fundo colorido */
 .noticia-fut p.futebol, .noticia-fut p.remo {
     font-size: 14px;
@@ -199,23 +202,25 @@ body {
 }
 
 /*----------------------------------------------------------------------------*/
-section.container-jogo-classificacao {
-    background-color: #efefef ;
+.container-jogo {
     margin: 0;
     padding: 0;
     font-family: "Rajdhani", sans-serif;
 }
-.container-jogo-classificacao {
+
+.container-jogo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px 400px;
 
+
 }
 
 .proximo-jogo, .classificacao {
-  margin: 30px;
-/* Espaçamento */
+    margin: 95px;
+    /* Espaçamento entre proximo jogo e a tabela*/
+    margin-top: 40px;
 }
 
 h3 {
@@ -241,7 +246,8 @@ h3 {
 }
 
 .logo {
-    width: 50px; /* Largura dos logos */
+    width: 50px;
+    /* Largura dos logos */
     height: auto;
     margin: 0 20px;
 }
@@ -251,7 +257,7 @@ h3 {
     text-align: center;
     justify-content: center;
     margin-right: 110px;
-    
+
 }
 
 table {
@@ -260,7 +266,7 @@ table {
 }
 
 th, td {
-    
+
     text-align: left;
 }
 
@@ -275,36 +281,58 @@ a {
     margin-top: 10px;
     color: #d2232a;
     text-decoration: none;
-   font-weight: 600; 
+    font-weight: 600;
     /* Negrito */
-    
+
 }
-#link-tabela{
+
+#link-tabela {
     font-weight: bold;
     margin-left: 120px;
 }
 
+.border-left {
+    border-left: 2px solid red;
+    padding-left: 10px;
+}
+
 /*---------------------------------------------------------------------------------------------------------------------*/
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    /* Espaça os itens igualmente */
+    align-items: center;
+    background-color: rgb(227, 54, 54);
+    font-family: "Rajdhani", sans-serif;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.local, .ct {
+    flex: 1;
+    /* Faz com que cada seção ocupe o mesmo espaço */
+    margin: 0 20px;
+    /* Margem entre as seções */
+    color: white;
+    /* Cor do texto */
+    text-align: center;
+    /* Centraliza o texto dentro de cada div */
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+.site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    m
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
 footer {
     background-color: #000;
     padding: 20px;
     text-align: center;
     color: #fff;
-}
-
-.container {
-    width: 1200px;
-    margin: auto;
-}
-
-.site img {
-    width: 150px;
-}
-
-.informacoes {
-    display: inline-block;
-    justify-content: center;
-    margin-bottom: 20px;
+    font-family: "Rajdhani", sans-serif;
 }
 
 .patrocinadores, .apoio .parceiros {
@@ -313,7 +341,8 @@ footer {
 
 .patrocinadores h2, .apoio h2, .parceiros h2 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: red;
 }
 
 .logos {
@@ -321,8 +350,6 @@ footer {
     justify-content: center;
 }
 
-.logo img {
-    width: 120px;
-    height: auto;
-    color: white;
+.logos img {
+    margin: 10px;
 }
