@@ -45,7 +45,7 @@ body {
 }
 
 .menu a:hover {
-    text-decoration: dashed;
+   
     background-color: rgb(85, 6, 9);
     text-decoration: underline;
     /* Vai aparecer o traço embaixo */
@@ -137,13 +137,11 @@ body {
 
 .secao-1, .secao-2 {
     width: 850px;
-    /* Define a largura fixa */
     height: 480px;
-    /* Define a altura fixa */
     overflow: hidden;
     /* Esconde o que ultrapassa os limites do bloco */
     position: relative;
-    /* Necessário para o texto sobreposto funcionar */
+    /* Necessário para o texto sobreposto funcionar em cima da imagem */
     margin: 2px;
 }
 
@@ -152,9 +150,6 @@ body {
     height: 150%;
     object-fit: cover;
     /* Ajusta a imagem para preencher o espaço */
-    object-position: center;
-    /* Centraliza o foco da imagem */
-    object-position: center bottom;
     transform: scale(1.1);
     /* Aumentado o zoom */
 }
@@ -178,7 +173,6 @@ body {
     /* Reduzi o padding */
     border-radius: 5px;
     max-width: 90%;
-    z-index: 2;
     /* Garante que o texto fique acima da imagem */
 }
 
@@ -277,7 +271,19 @@ td img {
     margin-right: 10px;
 }
 
-a {
+#link-tabela{
+    margin-top: 10px;
+    color: #d2232a;
+    text-decoration: none;
+    font-weight: 700;
+    /* Negrito */
+
+}
+
+#link-tabela {
+    margin-left: 120px;
+}
+.link-tabela{
     margin-top: 10px;
     color: #d2232a;
     text-decoration: none;
@@ -285,12 +291,6 @@ a {
     /* Negrito */
 
 }
-
-#link-tabela {
-    font-weight: bold;
-    margin-left: 120px;
-}
-
 .border-left {
     border-left: 2px solid red;
     padding-left: 10px;
@@ -318,17 +318,48 @@ a {
     text-align: center;
     /* Centraliza o texto dentro de cada div */
 }
+/*-----------------------------------------------------------------------------------------------------------------*/
+.fotos{
+    display: flex;
+     margin-right: -15px;
+     margin-left: -15px;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+.patrocinios {
+    display: flex;
+    flex-direction: column; /* Deixa em coluna */
+    align-items: center;
+    gap: 10px;  
+    padding: 10px;
+}
+
+.linha-superior, .linha-inferior {
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.linha-inferior{
+    margin-left: 340px;
+    /* Vai fazer*/
+}
+.patrocinios img {
+    width: 300px;
+  
+}
+
 /*------------------------------------------------------------------------------------------------------------------*/
-.site{
+.site {
     display: flex;
     justify-content: center;
     align-items: center;
-    m
+    
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
 footer {
-    background-color: #000;
+    background-color: #000000;
     padding: 20px;
     text-align: center;
     color: #fff;
