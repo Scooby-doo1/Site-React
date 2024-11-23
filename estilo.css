@@ -45,7 +45,7 @@ body {
 }
 
 .menu a:hover {
-   
+
     background-color: rgb(85, 6, 9);
     text-decoration: underline;
     /* Vai aparecer o traço embaixo */
@@ -191,7 +191,7 @@ body {
     padding: 5px;
     border-radius: 3px;
     margin-bottom: 5px;
-    z-index: 3;
+
     /* Garante que o fundo do texto fique acima da imagem */
 }
 
@@ -212,7 +212,7 @@ body {
 }
 
 .proximo-jogo, .classificacao {
-    margin: 95px;
+    margin: 45px;
     /* Espaçamento entre proximo jogo e a tabela*/
     margin-top: 40px;
 }
@@ -231,6 +231,7 @@ h3 {
     border-radius: 4px;
     font-weight: bold;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 
 .logos {
@@ -271,7 +272,7 @@ td img {
     margin-right: 10px;
 }
 
-#link-tabela{
+#link-tabela {
     margin-top: 10px;
     color: #d2232a;
     text-decoration: none;
@@ -283,7 +284,8 @@ td img {
 #link-tabela {
     margin-left: 120px;
 }
-.link-tabela{
+
+.link-tabela {
     margin-top: 10px;
     color: #d2232a;
     text-decoration: none;
@@ -291,10 +293,12 @@ td img {
     /* Negrito */
 
 }
+
 .border-left {
     border-left: 2px solid red;
     padding-left: 10px;
 }
+
 
 /*---------------------------------------------------------------------------------------------------------------------*/
 .informacoes {
@@ -318,18 +322,21 @@ td img {
     text-align: center;
     /* Centraliza o texto dentro de cada div */
 }
+
 /*-----------------------------------------------------------------------------------------------------------------*/
-.fotos{
+.fotos {
     display: flex;
-     margin-right: -15px;
-     margin-left: -15px;
+    margin-right: -15px;
+    margin-left: -15px;
 }
+
 /*-----------------------------------------------------------------------------------------------------------------*/
 .patrocinios {
     display: flex;
-    flex-direction: column; /* Deixa em coluna */
+    flex-direction: column;
+    /* Deixa em coluna */
     align-items: center;
-    gap: 10px;  
+    gap: 10px;
     padding: 10px;
 }
 
@@ -340,13 +347,15 @@ td img {
     justify-content: center;
     align-items: center;
 }
-.linha-inferior{
+
+.linha-inferior {
     margin-left: 340px;
     /* Vai fazer*/
 }
+
 .patrocinios img {
     width: 300px;
-  
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
@@ -354,7 +363,7 @@ td img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
@@ -383,4 +392,69 @@ footer {
 
 .logos img {
     margin: 10px;
+}
+
+/* ---------------------------------------------------------------- */
+.noticias {
+    max-width: 990px;
+    margin: 0 auto;
+    display: flex;
+    font-family: "Rajdhani", sans-serif;
+    gap: 20px; /* Adiciona espaço entre as colunas */
+    text-transform: uppercase;
+}
+
+.noticias div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-container {
+    position: relative; /* Adiciona posição relativa para o contêiner da imagem */
+}
+
+.noticias div img {
+    width: 100%;
+    height: 400px; /* Altura fixa para ambas as imagens */
+}
+
+.noticias-modalidade {
+    position: absolute; /* Permite que o texto fique sobre a imagem */
+    bottom: 1px; /* Distância do fundo da imagem */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    padding: 10px; /* Ajuste o padding para diminuir o espaço interno */
+    width: 96%; /* Ajusta a largura máxima do texto */
+    z-index: 1; /* Garante que o texto fique acima da imagem */
+    font-size: 10px; /* Tamanho da fonte */
+}
+
+.noticias-modalidade h2 {
+    margin: 5px 0; /* Reduz a margem do título */
+}
+
+.noticias-modalidade p {
+    margin: 0; /* Remove a margem do parágrafo para que o texto fique mais próximo */
+}
+.noticias div .noticia-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.link-noticias {
+    color: red; /* Cor do link */
+    font-weight: 600; /* Espessura da fonte */
+    text-decoration: none; /* Remove o sublinhado do link */
+    margin-top: 30px;
+   
+}
+
+.link-noticias:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+.hr-noticias{
+    width: 500px;
 }
