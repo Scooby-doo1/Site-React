@@ -384,239 +384,166 @@ td img {
 
 /*---------------------------------------------------------------------------------------------------------------------*/
 
-.grande {
+.flatv-container {
+  font-family: "Rajdhani", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flatv{
   display: flex;
-  margin: auto;
-  background-color: #ffffff;
-  width: 100%;
-  height: auto;
+  gap: 10px;
 }
 
-.grande1 {
-  color: black;
-  font-size: 25px;
-  font-family: "Rajdhani", sans-serif;
-  margin-left: 200px;
-  margin-top: 20px;
+.container{
+  flex: 1;
+  max-width: 800px;
 }
 
-.linha5 {
-  width: 1115px;
-  height: 1px;
-  background-color: black;
-  margin-left: 203px;
-  margin-top: 52px;
-  position: absolute;
+.fla-conteudo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.vejavideos {
-  color: #d2232a;
-  font-size: 16px;
-  font-family: "Rajdhani", sans-serif;
-  margin-left: 833px;
-  margin-top: 30px;
-
+.fla-titulo{
+color: #3d3d3d;
+  font-size: 35px;
+  margin: 0;
 }
 
-.videos-link {
+.link-video {
   text-decoration: none;
   color: #d2232a;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
-.videos-link :hover {
+.link-video:hover {
   text-decoration: underline;
-  color: #d2232a;
 }
-
-.imagem10 {
-  width: 780px;
-  height: 380px;
-  margin-top: 68px;
-  margin-left: -1113px;
+.divider {
+  width: 70em;
+  border: none;
+  border-top: 2px solid black;
+  overflow: hidden
 }
-
-.titulos20 {
-  color: black;
-  font-size: 20px;
-  font-family: "Rajdhani", sans-serif;
-  margin-left: -779px;
-  margin-top: 470px;
-}
-
-/* -------------------------------------------------------------- */
-.coluna-lateral {
-  width: 25%;
-  height: auto;
-  margin: 0 auto;
-  font-family: "Rajdhani", sans-serif;
-  position: absolute;
-  margin-left: 65%;
-}
-
-.item1 {
-  display: flex;
-  margin-bottom: 40px;
-  gap: 10px;
-  margin-top: -447px;
-}
-
-.item1 img {
-  width: 100px;
-  height: auto;
-}
-
-.texto-lateral1 {
+.fla-imagem {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
-.texto-lateral1 h3 {
-  font-size: 14px;
-  color: black;
+.imagem-jogador{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.jogo {
+  font-size: 30px;
   margin: 0;
 }
 
-.texto-lateral1 p {
-  font-size: 12px;
-  color: #666;
-  margin-top: 5px;
+.legenda {
+  margin: 0;
+  font-weight: 600;
+  color: gray;
 }
-
-.item2 {
+.item {
   display: flex;
-  margin-bottom: 40px;
-  gap: 10px;
+  margin-top: 72px;
+  
 }
 
-.item2 img {
-  width: 100px;
-  height: auto;
+.item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  /* Não destorce a imagem */
 }
 
-.texto-lateral2 {
-  display: flex;
-  flex-direction: column;
+.texto-lateral h3 {
+  font-size: 25px;
+  color: black;
+  margin: 0;
+  align-items: center;
   justify-content: center;
 }
 
-.texto-lateral2 h3 {
-  font-size: 14px;
-  color: black;
-  margin: 0;
-}
-
-.texto-lateral2 p {
-  font-size: 12px;
+.texto-lateral p {
+  font-size: 18px;
   color: #666;
   margin-top: 5px;
+  font-weight: 600;
+}
+.texto-lateral h3:hover{
+  color: red;
+}
+.jogo:hover{
+  color: red;
+
 }
 
-.item3 {
-  display: flex;
-  bottom: 40px;
-  gap: 10px;
-
-}
-
-.item3 img {
-  width: 100px;
-  height: auto;
-}
-
-.texto-lateral3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.texto-lateral3 h3 {
-  font-size: 14px;
-  color: black;
-  margin: 0;
-}
-
-.texto-lateral3 p {
-  font-size: 12px;
-  color: #666;
-  margin-top: 5px;
-}
 
 /* --------------------------------------------------- */
 
-.galeria {
-  font-family: 'Rajdhani', sans-serif;
-  margin: 20px;
+.foto-container {
+  font-family: "Rajdhani", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-
-.todasft {
-  color: #d2232a;
-  font-size: 15px;
-  font-family: 'Rajdhani', sans-serif;
-  margin-left: 1236px;
-  margin-top: -20px;
-}
-
-.todas {
-  text-decoration: none;
-  color: #d2232a;
-}
-
-.todas:hover {
-  text-decoration: underline;
-  color: #d2232a;
-}
-
-.galeria h2 {
-  font-size: 24px;
-  font-weight: bold;
+.fotos-conteudo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
-
 }
+.fla-titulo{
+  color: #3d3d3d;
+    font-size: 35px;
+    margin: 0;
+  }
+
 
 .fotos {
   display: flex;
-  gap: 50px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.linhadagaleria {
-  width: 1409px;
-  height: 1px;
-  background-color: black;
-  margin-left: 1px;
-  margin-top: -20px;
-  position: absolute;
-}
 
-.foto1 {
+.imagens {
   width: 30%;
   display: flex;
   flex-direction: column;
 }
 
-.foto1 img {
+.imagens img {
   width: 100%;
-  margin-bottom: 10px;
+
+}
+.data{
+  color: red;
+
 }
 
-.fotocomtexto h3 {
-  font-size: 14px;
-  color: #e11b22;
-  margin: 0 0 5px;
+
+.foto-legenda h2 {
+  font-size: 20px;
+  margin: 0px;
 }
 
-.fotocomtexto p {
-  font-size: 14px;
-  font-weight: bold;
-  color: black;
-  margin: 0 0 5px;
-}
 
-.fotocomtexto span {
-  font-size: 12px;
-  color: #666;
+span{
+  color: gray;
 }
-
+.foto-legenda:hover{
+  color: red;
+}
 
 /*------F---------------------------------------------------------------------------------------------------------*/
 .informacoes {
