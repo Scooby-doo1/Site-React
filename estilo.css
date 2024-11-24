@@ -2,459 +2,722 @@
 
 /* Essa linha importa uma fonte externa do Google Fonts*/
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .container-header {
-    background-color: #d2232a;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
+  background-color: #d2232a;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 
 .header-logo {
-    width: 180px;
-    margin-left: 225px;
-    margin-top: 40px;
+  width: 180px;
+  margin-left: 225px;
+  margin-top: 40px;
 }
 
 .menu {
-    display: flex;
-    gap: 20px;
-    /* .menu a vai fazer que com cada link esteja com seus espaçamento individual */
+  display: flex;
+  gap: 20px;
+  /* .menu a vai fazer que com cada link esteja com seus espaçamento individual */
 }
 
 .menu a {
-    padding: 10px;
-    background-color: #b1181dfd;
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 10px;
-    text-transform: uppercase;
-    /* Faz a letra ficarem MAIUSCULA */
+  padding: 10px;
+  background-color: #b1181dfd;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  /* Faz a letra ficarem MAIUSCULA */
 
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 700;
-    /* Define a espessura da fonte.  */
-    font-style: normal;
-    /* Mantém o estilo da fonte como normal, sem itálico.  */
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  /* Define a espessura da fonte.  */
+  font-style: normal;
+  /* Mantém o estilo da fonte como normal, sem itálico.  */
 }
 
 .menu a:hover {
 
-    background-color: rgb(85, 6, 9);
-    text-decoration: underline;
-    /* Vai aparecer o traço embaixo */
+  background-color: rgb(85, 6, 9);
+  text-decoration: underline;
+  /* Vai aparecer o traço embaixo */
 
 }
 
 .icon {
-    display: flex;
-    /* Alinha os ícones horizontalmente */
-    align-items: center;
-    /* Centraliza os ícones verticalmente */
-    gap: 10px;
-    /* Espaçamento entre os ícones */
-    margin-left: 300px;
+  display: flex;
+  /* Alinha os ícones horizontalmente */
+  align-items: center;
+  /* Centraliza os ícones verticalmente */
+  gap: 10px;
+  /* Espaçamento entre os ícones */
+  margin-left: 300px;
 }
 
 .icon img {
-    width: 20px;
-    height: auto;
+  width: 20px;
+  height: auto;
 }
 
 .icon .icon-adidas {
-    width: 60px;
-    height: auto;
+  width: 60px;
+  height: auto;
 }
 
 .icon a:hover {
-    filter: brightness(0) invert(1);
-    /* filter: Essa propriedade em CSS define efeitos visuais que podem ser aplicados a um elemento.
+  filter: brightness(0) invert(1);
+  /* filter: Essa propriedade em CSS define efeitos visuais que podem ser aplicados a um elemento.
     brightness(0): Essa função reduz o brilho do elemento ao mínimo, tornando-o praticamente preto.
     invert(1): Essa função inverte todas as cores do elemento. Combinada com o brightness(0), ela transforma o preto em branco. */
 }
 
 /*----------------------------------------------------------------------------------------------------------------*/
 .container-navegacao {
-    background-color: black;
-    width: 100%;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    /* Centers items vertically */
-    justify-content: center;
-    /* Centers items horizontally */
+  background-color: black;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  /* Centers items vertically */
+  justify-content: center;
+  /* Centers items horizontally */
 }
 
 .navegacao {
-    display: flex;
-    /* Make the navigation a flex container */
-    align-items: center;
-    /* Center items vertically within the navigation */
+  display: flex;
+  /* Make the navigation a flex container */
+  align-items: center;
+  /* Center items vertically within the navigation */
 }
 
 .navegacao ul {
-    display: flex;
-    /* Vai deixar os elemento na horizontal */
+  display: flex;
+  /* Vai deixar os elemento na horizontal */
 }
 
 .navegacao li {
-    margin: 10px;
-    /* Vai adicionar um espaçamento de 10px */
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 700;
-    /* Define a espessura da fonte.  */
-    font-style: normal;
-    /* Mantém o estilo da fonte como normal, sem itálico.  */
+  margin: 10px;
+  /* Vai adicionar um espaçamento de 10px */
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  /* Define a espessura da fonte.  */
+  font-style: normal;
+  /* Mantém o estilo da fonte como normal, sem itálico.  */
 
 }
 
 .navegacao a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    /* Faz a letra ficarem MAIUSCULA */
-    border-right: 1px solid #3b3a3a;
-    /* Vai fazer uma Borda na vertical. Teoricamente uma linha. */
-    padding-right: 10px;
-    /*Vai dar o espaçamento da linha para a linha não ficar colado com o nome */
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  /* Faz a letra ficarem MAIUSCULA */
+  border-right: 1px solid #3b3a3a;
+  /* Vai fazer uma Borda na vertical. Teoricamente uma linha. */
+  padding-right: 10px;
+  /*Vai dar o espaçamento da linha para a linha não ficar colado com o nome */
 }
 
 .navegacao a:hover {
-    color: red;
+  color: red;
 }
 
 /*-----------------------------------------------------------------------*/
 .secao {
-    display: flex;
-    background-color: #333;
+  display: flex;
+  background-color: #333;
 }
 
 .secao-1, .secao-2 {
-    width: 850px;
-    height: 480px;
-    overflow: hidden;
-    /* Esconde o que ultrapassa os limites do bloco */
-    position: relative;
-    /* Necessário para o texto sobreposto funcionar em cima da imagem */
-    margin: 2px;
+  width: 850px;
+  height: 480px;
+  overflow: hidden;
+  /* Esconde o que ultrapassa os limites do bloco */
+  position: relative;
+  /* Necessário para o texto sobreposto funcionar em cima da imagem */
+  margin: 2px;
 }
 
 .secao-1 img, .secao-2 img {
-    width: 100%;
-    height: 150%;
-    object-fit: cover;
-    /* Ajusta a imagem para preencher o espaço */
-    transform: scale(1.1);
-    /* Aumentado o zoom */
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+  /* Ajusta a imagem para preencher o espaço */
+  transform: scale(1.1);
+  /* Aumentado o zoom */
 }
 
 .secao-1:hover img, .secao-2:hover img {
-    transform: scale(1.2);
-    /* Aplica o zoom ao passar o mouse */
-    transition: transform .4s ease-in;
+  transform: scale(1.2);
+  /* Aplica o zoom ao passar o mouse */
+  transition: transform .4s ease-in;
 }
 
 
 /* Container de texto sobreposto */
 .noticia-fut {
-    position: absolute;
-    bottom: 20px;
-    left: 90px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* Fundo semitransparente */
-    padding: 5px;
-    /* Reduzi o padding */
-    border-radius: 5px;
-    max-width: 90%;
-    /* Garante que o texto fique acima da imagem */
+  position: absolute;
+  bottom: 20px;
+  left: 90px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Fundo semitransparente */
+  padding: 5px;
+  /* Reduzi o padding */
+  border-radius: 5px;
+  max-width: 90%;
+  /* Garante que o texto fique acima da imagem */
 }
 
 .noticia-fut:hover, h2 .remo:hover {
-    background-color: rgba(0, 0, 0, 0.900);
+  background-color: rgba(0, 0, 0, 0.900);
 }
 
 /* Títulos com fundo colorido */
 .noticia-fut p.futebol, .noticia-fut p.remo {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: red;
-    color: white;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 3px;
-    margin-bottom: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 5px;
 
-    /* Garante que o fundo do texto fique acima da imagem */
+  /* Garante que o fundo do texto fique acima da imagem */
 }
 
 /*----------------------------------------------------------------------------*/
 .container-jogo {
-    margin: 0;
-    padding: 0;
-    font-family: "Rajdhani", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .container-jogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 400px;
 
 
 }
 
 .proximo-jogo, .classificacao {
-    margin: 45px;
-    /* Espaçamento entre proximo jogo e a tabela*/
-    margin-top: 40px;
+  margin: 45px;
+  /* Espaçamento entre proximo jogo e a tabela*/
+  margin-top: 40px;
 }
 
 h3 {
-    margin-bottom: 10px;
-    /* Margem inferior para o título Próximo jogo e Classificação*/
+  margin-bottom: 10px;
+  /* Margem inferior para o título Próximo jogo e Classificação*/
 
 }
 
 .campeonato {
-    color: white;
-    background-color: red;
-    padding: 3px;
-    font-size: 12px;
-    border-radius: 4px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 3px;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .logos {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }
 
 .logo {
-    width: 50px;
-    /* Largura dos logos */
-    height: auto;
-    margin: 0 20px;
+  width: 50px;
+  /* Largura dos logos */
+  height: auto;
+  margin: 0 20px;
 }
 
 .arena-link {
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    margin-right: 110px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  margin-right: 110px;
 
 }
 
 table {
-    width: 300px;
+  width: 300px;
 
 }
 
 th, td {
 
-    text-align: left;
+  text-align: left;
 }
 
 td img {
-    width: 20px;
-    /* Largura das imagens na tabela */
-    height: auto;
-    margin-right: 10px;
+  width: 20px;
+  /* Largura das imagens na tabela */
+  height: auto;
+  margin-right: 10px;
 }
 
 #link-tabela {
-    margin-top: 10px;
-    color: #d2232a;
-    text-decoration: none;
-    font-weight: 700;
-    /* Negrito */
+  margin-top: 10px;
+  color: #d2232a;
+  text-decoration: none;
+  font-weight: 700;
+  /* Negrito */
 
 }
 
 #link-tabela {
-    margin-left: 120px;
+  margin-left: 120px;
 }
 
 .link-tabela {
-    margin-top: 10px;
-    color: #d2232a;
-    text-decoration: none;
-    font-weight: 600;
-    /* Negrito */
+  margin-top: 10px;
+  color: #d2232a;
+  text-decoration: none;
+  font-weight: 600;
+  /* Negrito */
 
 }
 
 .border-left {
-    border-left: 2px solid red;
-    padding-left: 10px;
+  border-left: 2px solid red;
+  padding-left: 10px;
+}
+
+/*------Noticias---------------------------------------------------------------------------------------------------------*/
+.noticias {
+  max-width: 990px;
+  margin: 0 auto;
+  display: flex;
+  font-family: "Rajdhani", sans-serif;
+  gap: 20px;
+  /* Adiciona espaço entre as colunas */
+  text-transform: uppercase;
+}
+
+.noticias div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem-container {
+  position: relative;
+  /* Adiciona posição relativa para o contêiner da imagem */
+}
+
+.noticias div img {
+  width: 100%;
+  height: 400px;
+  /* Altura fixa para ambas as imagens */
+}
+
+.noticias-modalidade {
+  position: absolute;
+  /* Permite que o texto fique sobre a imagem */
+  bottom: 1px;
+  /* Distância do fundo da imagem */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Fundo semitransparente */
+  padding: 10px;
+  /* Ajuste o padding para diminuir o espaço interno */
+  width: 96%;
+  /* Ajusta a largura máxima do texto */
+  z-index: 1;
+  /* Garante que o texto fique acima da imagem */
+  font-size: 10px;
+  /* Tamanho da fonte */
+}
+
+.noticias-modalidade h2 {
+  margin: 5px 0;
+  /* Reduz a margem do título */
+}
+
+.noticias-modalidade p {
+  margin: 0;
+  /* Remove a margem do parágrafo para que o texto fique mais próximo */
+}
+
+.noticias div .noticia-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.link-noticias {
+  color: red;
+  /* Cor do link */
+  font-weight: 600;
+  /* Espessura da fonte */
+  text-decoration: none;
+  /* Remove o sublinhado do link */
+  margin-top: 30px;
+
+}
+
+.link-noticias:hover {
+  text-decoration: underline;
+  /* Adiciona sublinhado ao passar o mouse */
+}
+
+.hr-noticias {
+  width: 500px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.grande {
+  display: flex;
+  margin: auto;
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+}
+
+.grande1 {
+  color: black;
+  font-size: 25px;
+  font-family: "Rajdhani", sans-serif;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.linha5 {
+  width: 1115px;
+  height: 1px;
+  background-color: black;
+  margin-left: 203px;
+  margin-top: 52px;
+  position: absolute;
+}
+
+.vejavideos {
+  color: #d2232a;
+  font-size: 16px;
+  font-family: "Rajdhani", sans-serif;
+  margin-left: 833px;
+  margin-top: 30px;
+
+}
+
+.videos-link {
+  text-decoration: none;
+  color: #d2232a;
+}
+
+.videos-link :hover {
+  text-decoration: underline;
+  color: #d2232a;
+}
+
+.imagem10 {
+  width: 780px;
+  height: 380px;
+  margin-top: 68px;
+  margin-left: -1113px;
+}
+
+.titulos20 {
+  color: black;
+  font-size: 20px;
+  font-family: "Rajdhani", sans-serif;
+  margin-left: -779px;
+  margin-top: 470px;
+}
+
+/* -------------------------------------------------------------- */
+.coluna-lateral {
+  width: 25%;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Rajdhani", sans-serif;
+  position: absolute;
+  margin-left: 65%;
+}
+
+.item1 {
+  display: flex;
+  margin-bottom: 40px;
+  gap: 10px;
+  margin-top: -447px;
+}
+
+.item1 img {
+  width: 100px;
+  height: auto;
+}
+
+.texto-lateral1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-lateral1 h3 {
+  font-size: 14px;
+  color: black;
+  margin: 0;
+}
+
+.texto-lateral1 p {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.item2 {
+  display: flex;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.item2 img {
+  width: 100px;
+  height: auto;
+}
+
+.texto-lateral2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-lateral2 h3 {
+  font-size: 14px;
+  color: black;
+  margin: 0;
+}
+
+.texto-lateral2 p {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.item3 {
+  display: flex;
+  bottom: 40px;
+  gap: 10px;
+
+}
+
+.item3 img {
+  width: 100px;
+  height: auto;
+}
+
+.texto-lateral3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-lateral3 h3 {
+  font-size: 14px;
+  color: black;
+  margin: 0;
+}
+
+.texto-lateral3 p {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* --------------------------------------------------- */
+
+.galeria {
+  font-family: 'Rajdhani', sans-serif;
+  margin: 20px;
+}
+
+.todasft {
+  color: #d2232a;
+  font-size: 15px;
+  font-family: 'Rajdhani', sans-serif;
+  margin-left: 1236px;
+  margin-top: -20px;
+}
+
+.todas {
+  text-decoration: none;
+  color: #d2232a;
+}
+
+.todas:hover {
+  text-decoration: underline;
+  color: #d2232a;
+}
+
+.galeria h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.fotos {
+  display: flex;
+  gap: 50px;
+}
+
+.linhadagaleria {
+  width: 1409px;
+  height: 1px;
+  background-color: black;
+  margin-left: 1px;
+  margin-top: -20px;
+  position: absolute;
+}
+
+.foto1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.foto1 img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.fotocomtexto h3 {
+  font-size: 14px;
+  color: #e11b22;
+  margin: 0 0 5px;
+}
+
+.fotocomtexto p {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 5px;
+}
+
+.fotocomtexto span {
+  font-size: 12px;
+  color: #666;
 }
 
 
-/*---------------------------------------------------------------------------------------------------------------------*/
+/*------F---------------------------------------------------------------------------------------------------------*/
 .informacoes {
-    display: flex;
-    justify-content: space-between;
-    /* Espaça os itens igualmente */
-    align-items: center;
-    background-color: rgb(227, 54, 54);
-    font-family: "Rajdhani", sans-serif;
-    padding: 20px;
-    font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  /* Espaça os itens igualmente */
+  align-items: center;
+  background-color: rgb(227, 54, 54);
+  font-family: "Rajdhani", sans-serif;
+  padding: 20px;
+  font-size: 15px;
 }
 
 .local, .ct {
-    flex: 1;
-    /* Faz com que cada seção ocupe o mesmo espaço */
-    margin: 0 20px;
-    /* Margem entre as seções */
-    color: white;
-    /* Cor do texto */
-    text-align: center;
-    /* Centraliza o texto dentro de cada div */
+  flex: 1;
+  /* Faz com que cada seção ocupe o mesmo espaço */
+  margin: 0 20px;
+  /* Margem entre as seções */
+  color: white;
+  /* Cor do texto */
+  text-align: center;
+  /* Centraliza o texto dentro de cada div */
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 .fotos {
-    display: flex;
-    margin-right: -15px;
-    margin-left: -15px;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 .patrocinios {
-    display: flex;
-    flex-direction: column;
-    /* Deixa em coluna */
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* Deixa em coluna */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
 }
 
 .linha-superior, .linha-inferior {
-    display: flex;
-    margin: 10px;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  margin: 10px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .linha-inferior {
-    margin-left: 340px;
-    /* Vai fazer*/
+  margin-left: 340px;
+  /* Vai fazer o banner mercado livre e nação irem para a direita*/
 }
 
 .patrocinios img {
-    width: 300px;
+  width: 300px;
 
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
 .site {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
 footer {
-    background-color: #000000;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    font-family: "Rajdhani", sans-serif;
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .patrocinadores, .apoio .parceiros {
-    margin: 20px;
+  margin: 20px;
 }
 
 .patrocinadores h2, .apoio h2, .parceiros h2 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: red;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: red;
 }
 
 .logos {
-    display: inline-block;
-    justify-content: center;
+  display: inline-block;
+  justify-content: center;
 }
 
 .logos img {
-    margin: 10px;
+  margin: 10px;
 }
 
 /* ---------------------------------------------------------------- */
-.noticias {
-    max-width: 990px;
-    margin: 0 auto;
-    display: flex;
-    font-family: "Rajdhani", sans-serif;
-    gap: 20px; /* Adiciona espaço entre as colunas */
-    text-transform: uppercase;
-}
+.coruja {
 
-.noticias div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.imagem-container {
-    position: relative; /* Adiciona posição relativa para o contêiner da imagem */
-}
-
-.noticias div img {
-    width: 100%;
-    height: 400px; /* Altura fixa para ambas as imagens */
-}
-
-.noticias-modalidade {
-    position: absolute; /* Permite que o texto fique sobre a imagem */
-    bottom: 1px; /* Distância do fundo da imagem */
-    color: white;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
-    padding: 10px; /* Ajuste o padding para diminuir o espaço interno */
-    width: 96%; /* Ajusta a largura máxima do texto */
-    z-index: 1; /* Garante que o texto fique acima da imagem */
-    font-size: 10px; /* Tamanho da fonte */
-}
-
-.noticias-modalidade h2 {
-    margin: 5px 0; /* Reduz a margem do título */
-}
-
-.noticias-modalidade p {
-    margin: 0; /* Remove a margem do parágrafo para que o texto fique mais próximo */
-}
-.noticias div .noticia-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-
-.link-noticias {
-    color: red; /* Cor do link */
-    font-weight: 600; /* Espessura da fonte */
-    text-decoration: none; /* Remove o sublinhado do link */
-    margin-top: 30px;
-   
-}
-
-.link-noticias:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-.hr-noticias{
-    width: 500px;
+  position: fixed;
+  width: 80px;
+  margin-top: 610px;
+  z-index: 10;
+  /* sobrepõem a imagem */
 }
