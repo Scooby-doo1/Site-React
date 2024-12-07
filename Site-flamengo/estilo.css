@@ -1,31 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-/* Essa linha importa uma fonte externa do Google Fonts*/
 body {
-  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
-.container-header {
+
+.cabeçalho {
+  display: flex;
   background-color: #d2232a;
   width: 100%;
   height: 100px;
-  display: flex;
   align-items: center;
 }
 
 
-.header-logo {
+.cabecalho-logo {
   width: 180px;
   margin-left: 225px;
   margin-top: 40px;
 }
 
-.menu {
+.menu-header {
   display: flex;
   gap: 20px;
   /* .menu a vai fazer que com cada link esteja com seus espaçamento individual */
 }
 
-.menu a {
+.menu-header a {
   padding: 10px;
   background-color: #b1181dfd;
   font-size: 20px;
@@ -33,17 +32,13 @@ body {
   font-weight: bold;
   text-decoration: none;
   border-radius: 10px;
-  text-transform: uppercase;
-  /* Faz a letra ficarem MAIUSCULA */
-
-  font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   /* Define a espessura da fonte.  */
   font-style: normal;
   /* Mantém o estilo da fonte como normal, sem itálico.  */
 }
 
-.menu a:hover {
+.menu-header a:hover {
 
   background-color: rgb(85, 6, 9);
   text-decoration: underline;
@@ -51,7 +46,7 @@ body {
 
 }
 
-.icon {
+.icones {
   display: flex;
   /* Alinha os ícones horizontalmente */
   align-items: center;
@@ -61,17 +56,17 @@ body {
   margin-left: 300px;
 }
 
-.icon img {
+.icones img {
   width: 20px;
   height: auto;
 }
 
-.icon .icon-adidas {
+.icones .icon-adidas {
   width: 60px;
   height: auto;
 }
 
-.icon a:hover {
+.icones a:hover {
   filter: brightness(0) invert(1);
   /* filter: Essa propriedade em CSS define efeitos visuais que podem ser aplicados a um elemento.
     brightness(0): Essa função reduz o brilho do elemento ao mínimo, tornando-o praticamente preto.
@@ -80,14 +75,12 @@ body {
 
 /*----------------------------------------------------------------------------------------------------------------*/
 .container-navegacao {
+  display: flex;
   background-color: black;
   width: 100%;
   height: 45px;
-  display: flex;
   align-items: center;
-  /* Centers items vertically */
   justify-content: center;
-  /* Centers items horizontally */
 }
 
 .navegacao {
@@ -103,14 +96,12 @@ body {
 }
 
 .navegacao li {
-  margin: 10px;
+  margin: 1px;
   /* Vai adicionar um espaçamento de 10px */
-  font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   /* Define a espessura da fonte.  */
   font-style: normal;
   /* Mantém o estilo da fonte como normal, sem itálico.  */
-
 }
 
 .navegacao a {
@@ -129,12 +120,12 @@ body {
 }
 
 /*-----------------------------------------------------------------------*/
-.secao {
+.container-foto {
   display: flex;
-  background-color: #333;
+  background-color: #131313;
 }
 
-.secao-1, .secao-2 {
+.conteudo-1, .conteudo-2 {
   width: 850px;
   height: 480px;
   overflow: hidden;
@@ -144,27 +135,26 @@ body {
   margin: 2px;
 }
 
-.secao-1 img, .secao-2 img {
+.conteudo-1 img, .conteudo-2 img {
   width: 100%;
   height: 150%;
   object-fit: cover;
-  /* Ajusta a imagem para preencher o espaço */
+  /* não desmancha a imagem */
   transform: scale(1.1);
   /* Aumentado o zoom */
 }
 
-.secao-1:hover img, .secao-2:hover img {
+.conteudo-1:hover img, .conteudo-2:hover img {
   transform: scale(1.2);
   /* Aplica o zoom ao passar o mouse */
   transition: transform .4s ease-in;
 }
 
 
-/* Container de texto sobreposto */
-.noticia-fut {
+.noticia-futebol {
   position: absolute;
   bottom: 20px;
-  left: 90px;
+  left: 40px;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   /* Fundo semitransparente */
@@ -175,16 +165,13 @@ body {
   /* Garante que o texto fique acima da imagem */
 }
 
-.noticia-fut:hover, h2 .remo:hover {
-  background-color: rgba(0, 0, 0, 0.900);
-}
+
 
 /* Títulos com fundo colorido */
-.noticia-fut p.futebol, .noticia-fut p.remo {
+.noticia-fut, .noticia-fut {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: red;
   color: white;
   display: inline-block;
   padding: 5px;
@@ -195,13 +182,12 @@ body {
 }
 
 /*----------------------------------------------------------------------------*/
-.container-jogo {
+.conteudo-jogo {
   margin: 0;
   padding: 0;
-  font-family: "Rajdhani", sans-serif;
 }
 
-.container-jogo {
+.conteudo-jogo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,7 +279,7 @@ td img {
 
 }
 
-.border-left {
+.borda-lateral {
   border-left: 2px solid red;
   padding-left: 10px;
 }
@@ -303,7 +289,6 @@ td img {
   max-width: 990px;
   margin: 0 auto;
   display: flex;
-  font-family: "Rajdhani", sans-serif;
   gap: 20px;
   /* Adiciona espaço entre as colunas */
   text-transform: uppercase;
@@ -377,38 +362,37 @@ td img {
   /* Adiciona sublinhado ao passar o mouse */
 }
 
-.hr-noticias {
+.hr {
   width: 500px;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------*/
 
-.flatv-container {
-  font-family: "Rajdhani", sans-serif;
+.conteudo-tv {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.flatv{
+.flatv {
   display: flex;
   gap: 10px;
 }
 
-.container{
+.conteudo {
   flex: 1;
   max-width: 800px;
 }
 
-.fla-conteudo{
+.fla-conteudo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.fla-titulo{
-color: #3d3d3d;
+.fla-titulo {
+  color: #3d3d3d;
   font-size: 35px;
   margin: 0;
 }
@@ -417,24 +401,26 @@ color: #3d3d3d;
   text-decoration: none;
   color: #d2232a;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .link-video:hover {
   text-decoration: underline;
 }
-.divider {
+
+.hr-flatv {
   width: 70em;
   border: none;
   border-top: 2px solid black;
   overflow: hidden
 }
+
 .fla-imagem {
   display: flex;
   flex-direction: column;
 }
 
-.imagem-jogador{
+.imagem-jogador {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -450,10 +436,11 @@ color: #3d3d3d;
   font-weight: 600;
   color: gray;
 }
+
 .item {
   display: flex;
   margin-top: 72px;
-  
+
 }
 
 .item img {
@@ -477,10 +464,12 @@ color: #3d3d3d;
   margin-top: 5px;
   font-weight: 600;
 }
-.texto-lateral h3:hover{
+
+.texto-lateral h3:hover {
   color: red;
 }
-.jogo:hover{
+
+.jogo:hover {
   color: red;
 
 }
@@ -488,23 +477,24 @@ color: #3d3d3d;
 
 /* --------------------------------------------------- */
 
-.foto-container {
-  font-family: "Rajdhani", sans-serif;
+.fotos-noticia {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
-.fotos-conteudo{
+
+.fotos-conteudo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
-.fla-titulo{
+
+.fla-titulo {
   color: #3d3d3d;
-    font-size: 35px;
-    margin: 0;
-  }
+  font-size: 35px;
+  margin: 0;
+}
 
 
 .fotos {
@@ -525,7 +515,8 @@ color: #3d3d3d;
   width: 100%;
 
 }
-.data{
+
+.data {
   color: red;
 
 }
@@ -537,34 +528,32 @@ color: #3d3d3d;
 }
 
 
-span{
+span {
   color: gray;
 }
-.foto-legenda:hover{
+
+.foto-legenda:hover {
   color: red;
 }
 
 /*------F---------------------------------------------------------------------------------------------------------*/
-.informacoes {
+
+.patrocinio-superior, .patrocinio-inferior {
   display: flex;
-  justify-content: space-between;
-  /* Espaça os itens igualmente */
+  margin: 10px;
+  gap: 20px;
+  justify-content: center;
   align-items: center;
-  background-color: rgb(227, 54, 54);
-  font-family: "Rajdhani", sans-serif;
-  padding: 20px;
-  font-size: 15px;
 }
 
-.local, .ct {
-  flex: 1;
-  /* Faz com que cada seção ocupe o mesmo espaço */
-  margin: 0 20px;
-  /* Margem entre as seções */
-  color: white;
-  /* Cor do texto */
-  text-align: center;
-  /* Centraliza o texto dentro de cada div */
+.patrocinio-inferior {
+  margin-left: 340px;
+  /* Vai fazer o banner mercado livre e nação irem para a direita*/
+}
+
+.patrocinios img {
+  width: 300px;
+
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -575,35 +564,30 @@ span{
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
-.patrocinios {
+
+
+
+.informacoes {
   display: flex;
-  flex-direction: column;
-  /* Deixa em coluna */
+  justify-content: space-between;
+  /* Espaça os itens igualmente */
   align-items: center;
-  gap: 10px;
-  padding: 10px;
+  background-color: rgb(227, 54, 54);
+  padding: 20px;
+  font-size: 15px;
 }
 
-.linha-superior, .linha-inferior {
-  display: flex;
-  margin: 10px;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.linha-inferior {
-  margin-left: 340px;
-  /* Vai fazer o banner mercado livre e nação irem para a direita*/
-}
-
-.patrocinios img {
-  width: 300px;
-
+.endereco-sede, .endereço-ct {
+  flex: 1;
+  /* Faz com que cada seção ocupe o mesmo espaço */
+  color: white;
+  /* Cor do texto */
+  text-align: center;
+  /* Centraliza o texto dentro de cada div */
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
-.site {
+.site-seguro {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -616,7 +600,6 @@ footer {
   padding: 20px;
   text-align: center;
   color: #fff;
-  font-family: "Rajdhani", sans-serif;
 }
 
 .patrocinadores, .apoio .parceiros {
@@ -639,11 +622,3 @@ footer {
 }
 
 /* ---------------------------------------------------------------- */
-.coruja {
-
-  position: fixed;
-  width: 80px;
-  margin-top: 610px;
-  z-index: 10;
-  /* sobrepõem a imagem */
-}
